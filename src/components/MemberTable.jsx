@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PageDetails from './PageDetails';
 import './MemberTable.scss';
 import logo from '../assets/logo.png'
 
@@ -32,9 +33,9 @@ const MemberTable = ({ data }) => {
     <div className='mem-tab p-lg-5 p-3'>
         <div className="head">
             <img src={logo} alt="" />
-            <span>Advocates association</span>
+            <span className='h1'>Advocates association</span>
         </div>
-        <div className="content p-4">
+        <div className="content p-4 ">
 
         <ul className="nav nav-tabs">
         <li className="nav-item">
@@ -65,7 +66,7 @@ const MemberTable = ({ data }) => {
           </a>
         </li>
       </ul>
-      <table className="table table-bordered mt-1">
+      <table className="table table-bordered mt-1 table-responsive">
         <thead>
           <tr>
             <th>Advocate Name</th>
@@ -91,6 +92,7 @@ const MemberTable = ({ data }) => {
           ))}
         </tbody>
       </table>
+      <PageDetails />
 
         </div>
       

@@ -1,5 +1,4 @@
 import SideNav from "./components/SideNav";
-import Home from "./components/Home";
 import MemberTable from "./components/MemberTable";
 import './App.scss'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

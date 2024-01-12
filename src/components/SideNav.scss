@@ -3,7 +3,7 @@
     color: #fff;
     height: 100vh;
     .ps-sidebar-container{
-        background-color: #261313;
+        background-color: black;
         display: flex;
         flex-direction: column;
         gap: 4rem;
@@ -11,15 +11,19 @@
         button{
             margin-top: 1rem;
             border: none;
-            background-color: #181717;
+            background-color: black;
             border-radius: 5px;
             color: #fff;
             
         }
 
     }
-    .menu-item {
-        font-size: 18px;
+    .ps-menu-item-root {
+        font-size: .5rem;
+        &.active{
+            border-left: 2px solid white;
+
+        }
         .icon {
             color: #f0f0f0;
         }

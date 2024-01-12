@@ -7,19 +7,26 @@
   align-items: center;
   gap: 3rem;
   .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     img {
-      width: 6rem;
+      width: 7rem;
     }
     span {
+      
     }
   }
   .content {
     width: 100%;
     box-shadow: rgba(54, 95, 129, 0.2) 0px 7px 29px 0px;
     border-radius: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
     .nav-tabs {
       display: flex;
       justify-content: space-between;
+      cursor: pointer;
       .nav-item {
         a.nav-link {
           color: black; // Set the text color for all tabs
@@ -29,7 +36,7 @@
           border-left: none;
           border-right: none;
 
-          &.active {
+          &.active,&:hover {
             color: white;
             background-color: #000; // Set the background color for the active tab
             border-color: #000;
@@ -39,10 +46,7 @@
             }
           }
 
-          &:hover {
-            background-color: lightgrey; // Set the background color for hover effect
-            border-color: lightgrey;
-          }
+          
           span{
             background-color: #000;
           }

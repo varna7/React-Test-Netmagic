@@ -19,6 +19,7 @@ const SideNav = () => {
     return (
       <Sidebar collapsed={collapsed}>
         <button onClick={handleToggleSidebar}><MenuIcon/></button>
+        
 
         <Menu>
           <MenuItem component={<Link to={"/"}/>} icon={<Home />}>Home</MenuItem>
