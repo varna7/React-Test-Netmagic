@@ -1,0 +1,53 @@
+.badge {
+  margin-left: 5px;
+}
+.mem-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  .head {
+    img {
+      width: 6rem;
+    }
+    span {
+    }
+  }
+  .content {
+    width: 100%;
+    box-shadow: rgba(54, 95, 129, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+    .nav-tabs {
+      display: flex;
+      justify-content: space-between;
+      .nav-item {
+        a.nav-link {
+          color: black; // Set the text color for all tabs
+          background-color: white; // Set the default background color for non-active tabs
+          border: 1px solid lightgrey;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+
+          &.active {
+            color: white;
+            background-color: #000; // Set the background color for the active tab
+            border-color: #000;
+            span{
+              background-color: white;
+              color: #000;
+            }
+          }
+
+          &:hover {
+            background-color: lightgrey; // Set the background color for hover effect
+            border-color: lightgrey;
+          }
+          span{
+            background-color: #000;
+          }
+        }
+      }
+    }
+  }
+}

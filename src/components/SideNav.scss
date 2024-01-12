@@ -1,0 +1,32 @@
+.ps-sidebar-root {
+    
+    color: #fff;
+    height: 100vh;
+    .ps-sidebar-container{
+        background-color: #261313;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+   
+        button{
+            margin-top: 1rem;
+            border: none;
+            background-color: #181717;
+            border-radius: 5px;
+            color: #fff;
+            
+        }
+
+    }
+    .menu-item {
+        font-size: 18px;
+        .icon {
+            color: #f0f0f0;
+        }
+    
+    }
+    
+
+  }
+  
+  
